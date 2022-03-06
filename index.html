@@ -1,301 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Landing Page Design</title>
-        <link rel="stylesheet"type="text/css"src="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE-edge">
+        <meta name="viewport"content="Width=device-width,initial-scale=1.0">
+        <title>Flipkart</title>
+        <link rel="stylesheet"herf="styles.css">
+        <link rel="shortcut icon"herf="assets/css/style.css">
+        <link rel="stylesheet"herf="assets/css/style.css"herf="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
         </head>
         <style>
-            *{
-                margin: 0;
-                padding: 0;
-            }
-            body{
-                width: 100%;
-                background: linear-gradient(to top,rgba(0,0,0,0.5)50,rgba(0,0,0,0.5)50), url(subhan.jpg);
-                background-position: center;
-                background-size: cover;
-                height: 100vh;
-                background-image: url("subhan.jpg");
-            }
-            .navbar{
-                width: 1200px;
-                height: 75px;
-                margin: auto;
-            }
-            .icon{
-                width: 200px;
-                float: left;
-                height: 70px;
-            }
-            .logo{
-                color: deeppink;
-                font-size: 35px;
-                font-family: Arial;
-                padding-left: 20px;
-                float: left;
-                padding-top: 10px;
-                margin-top: 5px;
-            }
-            .menu{
-                width: 400px;
-                float: left;
-                height: 70px;
-            }
-            ul{
-                float: left;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            ul li{
-                list-style: none;
-                margin-left: 62px;
-                margin-top: 27px;
-                font-size: 14px;
-            }
-            ul li a{
-                text-decoration: none;
-                color: #ff7200;
-                font-family: Arial;
-                font-weight: bold;
-                transition: 0.4s ease-in-out;
-            }
-            ul li a:hovert{
-                color: #ff7200;
-            }
-            .search{
-                width: 330px;
-                float: left;
-                margin-left: 270px;
-            }
-            .srch{
-                font-family: 'Times New Roman';
-                width: 200px;
-                height: 40px;
-                background: transparent;
-                border: 1px solid #ff7200;
-                margin-top: 13px;
-                color: #fff;
-                border-right: none;
-                font-size: 16px;
-                float: left;
-                padding: 10px;
-                border-bottom-left-radius: 5px;
-                border-top-left-radius: 5px;
-            }
-            .btn{
-                width: 100px;
-                height: 40px;
-                background: #ff7200;
-                border: 2px solid gold;
-                margin-top: 13px;
-                color:#fff;
-                font-size: 15px;
-                border-bottom-right-radius: 5px;
-                border-bottom-left-radius: 5px;
-                transition: 0.2 ease;
-                cursor: pointer;
-            }
-            .btn:hover{
-                color: #000;
-            }
-            .btn:focus{
-                outline: none;
-            }
-            .srch:focus{
-                outline: none;
-            }
-            .content{
-                width: 1200px;
-                height: auto;
-                margin: auto;
-                color: gold;
-                position: relative;
-            }
-            .content .par{
-                padding-left: 20px;
-                padding-bottom: 25px;
-                font-family: Arial;
-                letter-spacing: 1.2px;
-                line-height: 30px;
-            }
-            .content h1{
-                font-family: 'Times New Roman';
-                font-size: 50px;
-                padding-left: 20px;
-                margin-top: 9%;
-                letter-spacing: 2px;
-            }
-            .content .cn{
-                width: 160px;
-                height: 40px;
-                background: greenyellow;
-                border: none;
-                margin-bottom: 10px;
-                margin-left: 20px;
-                font-size: 18px;
-                border-radius: 10px;
-                cursor: pointer;
-                transition: .4s ease;
-            }
-            .content .cn a{
-                text-decoration: none;
-                color: #000;
-                transition: .3s ease;
-            }
-            .cn:hover{
-                background-color: red;
-            }
-            .content span{
-                color: #ff7200;
-                font-size: 65px;
-            }
-            .form{
-                width: 250px;
-                height: 380px;
-                background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-                position: absolute;
-                top: -20px;
-                left: 870px;
-                transform: translate(0%,-5%);
-                border-radius: 10px;
-                padding: 25px;
-            }
-            .form h2{
-                width: 220px;
-                font-family: sans-serif;
-                text-align: center;
-                color: white;
-                font-size: 22px;
-                background-color: #ff7200;
-                border-radius: 10px;
-                margin: 2px;
-                padding: 8px;
-            }
-            .form input{
-                width: 240px;
-                height: 35px;
-                background: transparent;
-                border-bottom: 1px solid #ff7200;
-                border-top: none;
-                border-right: none;
-                border-left: none;
-                color:#fff;
-                font-size: 15px;
-                letter-spacing: 1px;
-                margin-top: 30px;
-                font-family: sans-serif;
-            }
-            .form input:focus{
-                outline: none;
-            }
-            ::placeholder{
-                color: #fff;
-                font-family: Arial;
-            }
-            .btnn{
-                width: 240px;
-                height: 40px;
-                background: #ff7200;
-                border: none;
-                margin-top: 30px;
-                font-size: 18px;
-                border-radius: 10px;
-                cursor: pointer;
-                color: #fff;
-                transition: 0.4s ease;
-            }
-            .btnn:hover{
-                background: #fff;
-                color: #ff7200;
-            }
-            .btn a{
-                text-decoration: none;
-                color: #000;
-                font-weight: bold;
-            }
-            .form .link{
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 17px;
-                padding-top: 20px;
-                text-align:center;
-            }
-            .form .link a{
-                text-decoration: none;
-                color: #ff7200;
-            }
-            .liw{
-                padding-top: 15px;
-                padding-bottom: 10px;
-                text-align: center;
-            }
-            .icons a{
-                text-decoration: none;
-                color:#fff;
-            }
-            .icons .ion-icon{
-                color: #fff;
-                font-size: 30px;
-                padding-left: 14px;
-                padding-top: 5px;
-                transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-            }
-            .icons ion-icon{
-                color: yellow;
-            }
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root{
+    --theme-color: #2874f0;
+    --font-color:#fff';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins";
+    background-color: #f1f3f6;
+}
+
+.navbar{
+    height: 4rem;
+}
+
+.nav-search-items{
+    margin: auto;
+}
+
+.nav-logo{
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.nav-searchbar{
+    width: 32rem;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 6px 8px;
+    border-radius: 2px;
+}
+
+.mdi-magnify{
+    margin: 3px -30px;
+    position: absolute;
+    text-align: center;
+    color: var(--theme-color);
+}
+
+.navbar ul{
+    height: 4rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    background-color: var(--theme-color);
+}
+
+.navbar mdi{
+    color: var(--font-color)
+}
+
+.navbar a{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.container{
+    width: 100px;
+    min-height: calc(100vh-9rem);
+}
+
+.header{
+    padding: 1rem;
+    background-color: var(--font-color);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0/16%);
+}
+
+.header-images-ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.header-images{
+    width: 55px;
+}
+
+.header-items-ul li{
+    width: 8.5rem;
+    text-align: center;
+}
+
+.header-items-ul li{
+width: 8.5rem;
+padding-right: 8px;
+text-align: center;
+}
+
+.header-items{
+    text-decoration: none;
+    color: rgb(66, 62, 62);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header-items:hover{
+    color: var(--theme-color);
+}
+
+/*Slideshow Container*/
+.slideshow-container{
+    position: relative;
+    margin: 10px 8px;
+}
+
+.mySlides{
+    display: none;
+}
+
+.prev
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.active:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -moz-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5ms;
+}
+
+@-webkit-keyframes fade{
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade{
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.footer ul{
+    height: 5rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    background-color: var(--theme-color);
+}
+
+.footer i{
+    margin-right: 5px;
+    color: rgb(255, 217, 0)
+}
+
+.footer a{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.payment-method{
+    display: flex;
+    width: 50%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.payment-cards{
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 1152px){
+    html{
+        min-width: 1018px;
+    }
+
         </style>
         <body>
-           
-
-        
-            <div class="main">
-                <div class="navbar">
-                    <div class="icon">
-                        <h2 class="logo">SUBHAM MONDOL</h2>
+            <div class="navbar">
+                <ul>
+                    <div class="nav-search-items">
+                        <img src="logo23.png"class="nav-logo">
+                        <input class="nav-searchbar"type="text"placeholder="search for productsa,brands and more">
+                        <i class="mdi mdi-magnify"></i>
                         </div>
-                        <div class="menu">
-                        <ul>
-                            <li><a herf="#">HOME</a></li>
-                            <li><a herf="#">ABOUT</a></li>
-                            <li><a herf="#">SERVICE</a></li>
-                            <li><a herf="#">DESIGN</a></li>
-                            <li><a herf="#">CONTACT</a></li>
-                            </ul>
-                            </div>
-                            <div class="search">
-                                <input class="srch" type="search"name=""placeholder="Type To text">
-                                <a herf="#"><button class="btn">Search</button></a>
-                                </div>
-                                </div>
-                                <div class="content">
-                                    <h1>Web Design &<br>
-                                        <span>Development</span><br>Course</h1>
-                                        <p class="par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium<br> 
-                                            maxime iste commodi. Unde dicta doloremque, beatae cupiditate sit possimus nihil<br> 
-                                            animi repellendus eligendi veritatis quam!<br>
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, dolores!</p>
-                                            <button class="cn">
-                                                <a herf="#">JOIN US</a></button>
-                                            <div class="form">
-                                                <h2>Login Here</h2>
-                                                <input type="email"name="email"placeholder="Enter Email Here">
-                                                <input type="password"name=""placeholder="Enter Password Here">
-                                                <button class="btnn"><a herf="#">Login</a></button>
-                                                <p class="link">Don't have an account<br>
-                                                    <a herf="#">Sign up</a>here</p></p>
-                                                    <p class="liw">Log in with</p>
-                                                    <div class="icons">
-                                                        <a herf="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                                                        <a herf="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                                                        <a herf="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                                                        <a herf="#"><ion-icon name="logo-google"></ion-icon></a>
-                                                        <a herf="#"><ion-icon name="logo-skype"></ion-icon></a>
-                                                        </div>
-                                                        </div>
-                                                        </div>
-                                                        </div>
-                                                    </div>
+                        <div class="container">
+                            <div class="header">
+
+                                <ul class="header-images-url">
+                                    <li><a herf="#"><img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/header/top-offers.png?raw=true"class="header-images"></a></li>
+                                    <li><a herf="#"><img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/header/grocery.png?raw=true"class="header-images"></a></li>
+                                    <li><a herf="#"><img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/header/mobiles.png?raw=true"class="header-images"></a></li>
+                                    <li><a herf="#"><img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/header/fashion.png?raw=true"class="header-images"></a></li>
+                                    <li><a herf="#"><img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/header/electronics.png?raw=true"class="header-images"></a></li>
+                                    <li><a herf="#"><img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/header/home.jpg?raw=true"class="header-images"></a></li>
+                                    <li><a herf="#"><img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/header/appliances.png?raw=true"class="header-images"></a></li>
+                                    <li><a herf="#"><img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/header/travel.png?raw=true"class="header-images"></a></li>
+                                    <li><a herf="#"><img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/header/beauty-toys.png?raw=true"class="header-images"></a></li>
+                                    </ul>
+
+                                    <ul class="header-items-ul">
+                                        <li><a herf="#"class="header-items">Top Offers</a></li>
+                                        <li><a herf="#"class="header-items">Grocery</a></li>
+                                        <li><a herf="#"class="header-items">Mobiles</a></li>
+                                        <li><a herf="#"class="header-items">Fashion</a></li>
+                                        <li><a herf="#"class="header-items">Electronics</a></li>
+                                        <li><a herf="#"class="header-items">Home</a></li>
+                                        <li><a herf="#"class="header-items">Appliances</a></li>
+                                        <li><a herf="#"class="header-items">Travel</a></li>
+                                        <li><a herf="#"class="header-items">Top & more</a></li>
+                                        </ul>
+                                        </div>
+
+                                        <!--Slide Container-->
+                                        <div class="slideshow-container">
+                                            <!--Full width images number and captio text-->
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">1 / 3</div>
+                                                <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/carousel/slide1.jpg?raw=true"style="width:100%">
                                                 </div>
-                                                <script="https:unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-                                                <body>
-                                                    </body>
+
+                                                <div class="mySlides fade">
+                                                    <div class="numbertext">1 / 3</div>
+                                                    <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/carousel/slide2.jpg?raw=true"style="width:100%">
+                                                    </div>
+
+                                                    <div class="mySlides fade">
+                                                        <div class="numbertext">1 / 3</div>
+                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/carousel/slide3.jpg?raw=true"style="width:100%">
+                                                        </div>
+                                                        <!--Next and Previous buttons-->
+                                                        <a class="prev"onclick="plusSlides(-1)">&#10094;</a>
+                                                        <a class="prev"onclick="plusSlides(1)">&#10095;</a>
+                                                        </div>
+
+                                                        </div>
+                                                        <div class="footer">
+                                                            <ul>
+                                                                <div class="footer-items">
+                                                                    <li><a herf="#"class="footer-sellobtn"><i class="mdi mdi-briefcase-check"></i>seller</a></li>
+                                                                    <li><a herf="#"class="footer-advertisebtn"><i class="mdi mdi-star-circle"></i>advertise</a></li>
+                                                                    <li><a herf="#"class="footer-sellobtn"><i class="mdi mdi-help-circle"></i>help</a></li>
+                                                                    <li><a herf="#"class="footer-sellobtn"><i class="mdi mdi-phone-classic"></i>contact</a></li>
+                                                                    </div>
+
+                                                                    <div class="payment-method">
+                                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/payment/visa.png?raw=true"class="payment-cards">
+                                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/payment/maestro.png?raw=true"class="payment-cards">
+                                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/payment/discover.png?raw=true"class="payment-cards">
+                                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/payment/americanexpress.png?raw=true"class="payment-cards">
+                                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/payment/americanexpress02.png?raw=true"class="payment-cards">
+                                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/payment/cirrus.png?raw=true"class="payment-cards">
+                                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/payment/dinersclub.png?raw=true"class="payment-cards">
+                                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/payment/directdebit.png?raw=true"class="payment-cards">
+                                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/payment/egold.png?raw=true"class="payment-cards">
+                                                                        <img src="https://github.com/anurag0345/flipkart-landing-page/blob/main/assets/images/payment/paypal.png?raw=true"class="payment-cards">
+                                                                    
+                                                                        </div>
+                                                                        </ul>
+                                                                        </div>
+                                                                        <script src="carousel.js"defer="defer"crossorigin="anonymous"></script>
+                                                                    </body>
+                                                                    </html>
